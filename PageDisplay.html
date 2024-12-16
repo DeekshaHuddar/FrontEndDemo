@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deeksha_Huddar_DemoTask</title>
+    <link rel="stylesheet" href="MyStyle.css">
+
+</head>
+<body>
+    
+    
+    <div class="container">
+        <br /><br />
+        <h3 style="color:limegreen; text-align:center">Bundle and Save</h3>
+        <!-- Box for 1 Pair -->
+        <div class="box" id="box1" onclick="toggleBox('box1')">
+            <div class="box-header">
+                <!-- Box 1 with Radio Button -->
+                <label class="custom-radio box1">
+                    <input type="radio" name="pair" value="1pair" id="box1">
+                    <span class="radio-btn"></span> 1 Pair
+                </label>
+            </div>
+            <div class="box-content">
+                <h5>DKK: 190.00</h5>
+                <h5 style="text-align:end">50% OFF</h5>
+                <br />
+                <br /><label for="Sno">#1</label>
+
+                <label for="color1">Color:</label>
+                <select id="color1">
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                </select>
+                <label for="size1">Size:</label>
+                <select id="size1">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Box for 2 Pairs -->
+        <div class="box" id="box2" onclick="toggleBox('box2')">
+            <div class="box-header">
+                <!-- Box 2 with Radio Button -->
+                <label class="custom-radio box2">
+                    <input type="radio" name="pair" value="2pair" id="box2">
+                    <span class="radio-btn"></span> 2 Pair
+
+                </label>
+
+            </div>
+
+            <div class="box-content">
+                <h5>DKK: 345.00</h5>
+                <h5 style="text-align:end">40% OFF</h5>
+                <br />
+                <br />
+                <h4 style="color:limegreen; text-align:end">Most Popular</h4>
+                <label for="Sno">#1</label>
+                <label for="color2">Color:</label>
+                <select id="color2">
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                </select>
+                <label for="size2">Size:</label>
+                <select id="size2">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+                <br />
+                <label for="Sno">#2</label>
+                <label for="color2">Color:</label>
+                <select id="color2">
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                </select>
+
+                <label for="size2">Size:</label>
+                <select id="size2">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Box for 3 Pairs -->
+        <div class="box" id="box3" onclick="toggleBox('box3')">
+            <div class="box-header">
+                <!-- Box 3 with Radio Button -->
+                <label class="custom-radio box3">
+                    <input type="radio" name="pair" value="3pair" id="box3">
+                    <span class="radio-btn"></span> 3 Pair
+                </label>
+            </div>
+            <div class="box-content">
+                <h5>DKK: 528.00</h5>
+                <h5 style="text-align:end">60% OFF</h5>
+                <br />
+                <br />
+                <label for="Sno">#1</label>
+                <label for="color3">Color:</label>
+                <select id="color3">
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                </select>
+                <label for="size3">Size:</label>
+                <select id="size3">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+                <br />
+                <label for="Sno">#2</label>
+                <label for="color3">Color:</label>
+                <select id="color3">
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                </select>
+                <label for="size3">Size:</label>
+                <select id="size3">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+                <br />
+                <label for="Sno">#3</label>
+                <label for="color3">Color:</label>
+                <select id="color3">
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                </select>
+                <label for="size3">Size:</label>
+                <select id="size3">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+        </div>
+        <!-- Add to Cart button -->
+        <button class="add-to-cart">
+            <span class="plus-symbol">+</span> Add to Cart
+        </button>
+    </div>
+    <script src="Script1.js"></script>
+</body>
+</html>

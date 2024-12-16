@@ -1,0 +1,162 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.container {
+    width: 500px;
+}
+
+.box {
+   
+    border: 2px solid #ccc;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.box-header {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.box-content {
+    display: none;
+    margin-top: 10px;
+}
+.bullet {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #333;
+    margin-right: 10px;
+}
+.label{
+    margin-left:10px;
+}
+
+select {
+    margin: 5px;
+    border: 1px solid white;
+    border-radius: 2px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+    cursor: pointer;
+    width:100px;
+}
+
+.box.expanded .box-content {
+    display: block;
+}
+
+.box.expanded {
+    background-color: #f0f0f0;
+    border-color:limegreen;
+    
+}
+
+.radio-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid limegreen;
+    margin-right: 10px;
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor:pointer;
+    background: white;
+}
+
+.radio-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    background-color:white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+    .radio-btn input[type="radio"] {
+        display: none; /* Hide the default radio button */
+    }
+
+
+        .radio-btn input[type="radio"]:checked + .radio-btn::before {
+            background-color:limegreen; /* Green background for selected state */
+            border-color:limegreen; /* Green border for selected state */
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.6); /* Glow effect */
+        }
+
+        .radio-btn input[type="radio"]:checked + .radio-btn::after {
+            content: '';
+            position: absolute;
+            left: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color:whitesmoke; /* White inner circle */
+        }
+
+/* Hover effect */
+.radio-btn:hover .radio-btn {
+    border-color:mediumseagreen;
+}
+
+/* Focus effect */
+.radio-btn input[type="radio"]:focus + .radio-btn {
+    box-shadow: 0 0 0 4px rgba(76, 175, 80, 0.2);
+}
+
+/* Add to Cart button styling */
+.add-to-cart {
+    display: flex;
+    align-items: center;
+    position:center;
+    justify-content: center;
+    background-color:limegreen;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin-top: 20px;
+    margin-left:35px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 80%;
+    text-transform: uppercase;
+}
+
+/* Plus symbol styling */
+.plus-symbol {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+/* Hover effect for Add to Cart button */
+.add-to-cart:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
